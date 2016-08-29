@@ -1,0 +1,300 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Brad Hussey
+Updated: August 2013
+Notes:	 Hand coded for Udemy.com
+
+*/
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+ #feature{
+  background-color: #D3D3D3;
+}
+#features
+
+{
+  background-color:#DCDCDC;
+  text-align: center;
+}
+#features img{
+  margin: 0 0 20px;
+}
+#message
+{
+  margin-bottom: 10px;
+}
+footer{
+  background: #333;
+  color:#eee;
+  font-size: 11px;
+  padding: 20px;
+}
+ .unstyled
+{
+  list-style: none;
+
+  padding: 0;
+}
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+   body{
+     -webkit-font-smoothing:antialiased;
+     text-rendering: optimizeLegibility;
+   }
+
+.well .page-header
+{
+  margin-top: 0;
+}
+.well .page-header h1
+{
+  margin-top: 0;
+}
+.tabbable img.thumbnail
+{
+  margin: 0 20px 10px 0;
+}
+
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+   #list
+   {
+     background-color:#DCDCDC;
+   }
+   .jumbotron
+   {
+     background-color: rgb(128,128,128);
+   }
+   .jumbotron h1
+   {
+    text-align: center;
+    color:#000080;
+   }
+   .jumbotron img
+   {
+    padding-right: 0 0 60px 0;
+   }
+
+
+   .well{
+     background-color:#DCDCDC;
+      margin-top: 20px;
+   }
+   #navi
+   {
+      margin-top: 40px;
+      padding-left:10px;
+   }
+   #searchInput
+   {
+     width:400px;
+     margin-top: 40px;
+   }
+   #but
+   {
+     margin-top: 40px;
+   }
+   .navbar-brand
+   {
+     padding:13px 15px;
+   }
+   span{
+     padding-right: 10px;
+   }
+
+
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+   #mycarousel
+   {
+     margin-top: 60px;
+   }
+   .carousel-caption
+   {
+     font-size: 24px;
+   }
+   .carousel-caption h4
+   {
+     font-size: 32px;
+   }
+#mycarousel .item
+{
+  height: 400px;
+}
+#slide1
+{
+  background: url('../images/caro1_medium.jpg') top center no-repeat;
+
+}
+#slide2
+{
+  background: url('../images/caro2_medium.jpg') top center no-repeat;
+}
+#slide3
+{
+
+  background: url('../images/caro3_medium.jpg') top center no-repeat;
+}
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+.alert
+{
+  margin-top: 20px;
+  display: none;
+}
+
+
+.thumbnails
+{
+  margin: 20px 0;
+}
+.thumbnails{
+  position: relative;
+}
+.thumbnail h3
+{
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 10px;
+}
+.thumbnail .price
+{
+  top: -10px;
+  right: -10px;
+  font-size: 22px;
+  position: absolute;
+  padding: 10px;
+}
+.thumbnail .price sup {
+  font-weight: normal;
+  font-size: 12px;
+}
+.thumbnail span .glyphicon {
+  margin-right: 5px;
+}
+
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+  .thumbnail .price
+  {
+
+    font-size: 12px;
+
+  }
+  .thumbnail .price sup {
+    font-size: 8px;
+  }
+  .carousel-caption
+  {
+    font-size: 8px;
+  }
+  .carousel-caption h4
+  {
+    font-size: 16px;
+  }
+
+  #mycarousel .item
+  {
+    height: 200px;
+  }
+  #slide1
+  {
+    background: url('../images/caro1_small.jpg') top center no-repeat;
+
+  }
+  #slide2
+  {
+    background: url('../images/caro2_small.jpg') top center no-repeat;
+  }
+  #slide3
+  {
+
+    background: url('../images/caro3_small.jpg') top center no-repeat;
+  }
+
+}
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 768px) {
+  #myimage
+  {
+    width:100%;
+  }
+  .carousel-caption
+  {
+    font-size: 16px;
+  }
+  .carousel-caption h4
+  {
+    font-size: 24px;
+  }
+
+  #mycarousel .item
+  {
+    height: 310px;
+  }
+  #slide1
+  {
+    background: url('../images/caro1_medium.jpg') top center no-repeat;
+
+  }
+  #slide2
+  {
+    background: url('../images/caro2_medium.jpg') top center no-repeat;
+  }
+  #slide3
+  {
+    background: url('../images/caro3_medium.jpg') top center no-repeat;
+
+  }
+
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  #mycarousel .item
+  {
+    height: 500px;
+  }
+  #slide1
+  {
+    background: url('../images/caro1_large.jpg') top center no-repeat;
+
+  }
+  #slide2
+  {
+    background: url('../images/caro2_large.jpg') top center no-repeat;
+  }
+  #slide3
+  {
+    background: url('../images/caro3_large.jpg') top center no-repeat;
+
+  }
+
+
+}
+#mycarousel{
+  margin-top: 110px;
+}
+body{
+  background-color: rgb(128,128,128);
+  color:	#220A29;
+}

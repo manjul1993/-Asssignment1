@@ -1,0 +1,71 @@
+
+section
+{
+  background-color: yellow;
+  width:50%;
+  height:400px;
+  float: left;
+}
+
+aside
+{
+  background-color: red;
+  width:25%;
+  height:400px;
+
+}
+#left
+{
+  float:left;
+}
+#right
+{
+  float: right;
+}
+header h1
+{
+  padding-top: 20px;
+  width:100%;
+  height:100px;
+}
+header
+{
+  background-color: brown;
+  width:100%;
+  height:100px;
+  overflow: hidden;
+
+}
+nav li{
+  display: inline;
+  padding-right: 20px;
+  color:black;
+  font-size: 15px;
+
+}
+nav ul{
+  margin-top:0;
+}
+nav a:hover
+{
+color:white;
+font-size:17px;
+}
+nav a{
+  text-decoration: none;
+}
+nav{
+  background-color:orange;
+  width:100%;
+  height:50px;
+
+
+}
+footer
+{
+  background-color: pink;
+  width:100%;
+  height:50px;
+  clear: both;
+
+}

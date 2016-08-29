@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>BootStrap Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet"  href="css/styles.css">
+   <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet"  href="css/bootstrap-glyphicons.css">
+  </head>
+  <body>
+    <div class="container" id="main">
+      <div class="navbar navbar-fixed-top">
+        <div class="container">
+          <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="images/logo.png" alt="My LOGO"></a>
+          <div class="nav-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active">
+                <a href="#">Home</a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<strong class="caret"></strong></a>
+                <ul class="dropdown-menu">
+                    <li>
+                      <a href="#">Web Design</a>
+                    </li>
+                    <li>
+                      <a href="#">Web Development</a>
+                    </li>
+                    <li>
+                      <a href="#">Web Applications</a>
+                    </li>
+                    <li class="divider">
+
+                    </li>
+                    <li class="dropdown-header">More Services</li>
+                    <li>
+                      <a href="#">Social Media Market</a>
+                    </li>
+                    <li>
+                      <a href="#">Communication Channel</a>
+                    </li>
+                </ul><!--end of dropdown menu-->
+              </li>
+            </ul><!--end of nav ul-->
+            <form class="navbar-form pull-left">
+              <input type="text" class="form-control" id="searchInput" placeholder="Search here please..">
+              <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search">
+              </span>
+            </button>
+            </form><!--end of navform-->
+            <ul class="nav navbar-nav pull-right">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user">
+                </span>My Account<strong class="caret"></strong></a>
+                <ul class="dropdown-menu">
+                 <li><a href="#"><span class="glyphicon glyphicon-wrench"></span>Settings</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-refresh"></span>Update Profile</a></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-briefcase"></span>Billing</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-off"></span>Signout</a></li>
+                </ul>
+              </li>
+            </ul><!--end of my account list-->
+          </div><!--end of nabvar collap-->
+        </div><!--end of nav container-->
+      </div><!--end of navbar-->
+
+
+      <div class="carousel slide" id="mycarousel">
+        <!--Adding Indicators-->
+        <ol class="carousel-indicators">
+          <li class="active" data-slide-to="0" data-target="#mycarousel"></li>
+          <li data-slide-to="1" data-target="#mycarousel"></li>
+          <li data-slide-to="2" data-target="#mycarousel"></li>
+        </ol>
+      <!--Starting of Carousel-->
+      <div class="carousel-inner">
+        <div class="item active" id="slide1">
+          <!--<img src="http://placehold.it/1200x500">-->
+          <div class="carousel-caption">
+            <h4>jQuery CDN</h4>
+            <p>If you don't want to download and host jQuery yourself, you can include it from a CDN (Content Delivery Network).</p>
+          </div><!--end of carousel caption-->
+        </div><!--end of carousel item-->
+        <div class="item" id="slide2">
+          <!--<img src="http://placehold.it/1200x500">-->
+          <div class="carousel-caption">
+            <h4>jQuery Syntax</h4>
+            <p>The jQuery syntax is tailor-made for selecting HTML elements and performing some action on the element(s).</p>
+          </div><!--end of carousel caption-->
+        </div><!--end of carousel item-->
+        <div class="item" id="slide3">
+          <!--<img src="http://placehold.it/1200x500">-->
+          <div class="carousel-caption">
+            <h4>jQuery Selectors</h4>
+            <p>jQuery selectors are one of the most important parts of the jQuery library.</p>
+          </div><!--end of carousel caption-->
+        </div><!--end of carousel item-->
+      </div><!--end of carousel-inner-->
+      <!--Carousel Controllers-->
+      <a class="left carousel-control" data-slide="prev" href="#mycarousel"><span class="icon-prev"></span></a>
+      <a class="right carousel-control" data-slide="next" href="#mycarousel"><span class="icon-next"></span></a>
+      </div><!--end of mycarousel-->
+
+
+      <div class="row" id="bigCallout">
+        <div class="col-12">
+          <!--Time for an Alert Box-->
+          <div class="alert alert-block alert-success fade in" id="successalert">
+            <button type="button" class="close" data-dismiss="alert">&times;
+            </button><!--end of button-->
+            <h4>SUCCESS!!</h4>
+            <p>Yes..you have sucessfully added all the data to your paragraph,now you can head on with your work..</p>
+          </div><!--end of alert box-->
+
+          <!--Visible only on Small Screens-->
+          <div class="well well-small visible-sm">
+            <a href="" class="btn btn-large btn-block btn-info">
+              <span class="glyphicon glyphicon-phone"></span>Please call us here..</a>
+          </div><!--end of small well-->
+          <div class="well">
+            <div class="page-header">
+              <h1>jQuery Effects <small>Effects Reference</small></h1>
+            </div><!--end of page-header-->
+            <p class="lead">The optional callback parameter is a function to be executed after the hide()
+              or show() method completes (you will learn more about callback functions in a later chapter).</p>
+              <a href="" class="btn btn-large btn-primary" id="alertme">Click here to add more..</a>
+              <a href="" class="btn btn-large btn-link">Try saving it</a>
+          </div><!--end of well-->
+        </div><!--end of col-12-->
+      </div><!--end of bigCallout-->
+
+
+      <div class="row" id="featuresHead">
+        <div class="col-12">
+          <h2>New Features Added</h2>
+          <p class="lead">To manipulate the position, remember to first set the CSS position
+             property of the element to relative, fixed, or absolute!</p>
+        </div><!--end of features col-12-->
+      </div><!--end of featuresHead-->
+
+      <div class="row" id="features">
+        <div class="col-sm-4 feature">
+          <div class="panel">
+            <div class="panel-heading">
+              <h3 class="panel-title">jQuery Fuctions</h3>
+            </div><!--end of features first panel heading-->
+            <img src="../images/badge_html5.jpg" alt="jQuery" class="img-circle">
+            <p>The optional callback parameter is a function to be executed after the animation completes.</p>
+            <a href="http://www.w3schools.com/jquery/jquery_animate.asp" target="_blank" class="btn btn-warning btn-block">
+              For new Exclusive Feature</a>
+          </div><!--end of feature first panel-->
+        </div><!--end of features first section-->
+        <div class="col-sm-4 feature">
+          <div class="panel">
+            <div class="panel-heading">
+              <h3 class="panel-title">jQuery Advance</h3>
+            </div><!--end of features second panel heading-->
+            <img src="../images/badge_css3.jpg" alt="jQuery" class="img-circle">
+            <p>The optional callback parameter is a function to be executed after the animation completes.</p>
+            <a href="http://www.w3schools.com/jquery/jquery_animate.asp" target="_blank" class="btn btn-danger btn-block">
+              For the advance version</a>
+          </div><!--end of feature second panel-->
+        </div><!--end of features second section-->
+        <div class="col-sm-4 feature">
+          <div class="panel">
+            <div class="panel-heading">
+              <h3 class="panel-title">New Arrivals</h3>
+            </div><!--end of features third panel heading-->
+            <img src="../images/badge_bootstrap.jpg" alt="jQuery" class="img-circle">
+            <p>The optional callback parameter is a function to be executed after the animation completes.</p>
+            <a href="http://www.w3schools.com/jquery/jquery_animate.asp" target="_blank" class="btn btn-info btn-block">
+              For watching new arrivals</a>
+          </div><!--end of feature third panel-->
+        </div><!--end of features third section-->
+
+      </div><!--end of features-->
+      <hr>
+
+      <div class="row" id="moreInfo">
+        <div class="col-sm-6">
+          <h3>jQuery Absolute Features</h3>
+          <div class="tabbable">
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+              <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+            </ul><!--end of info ul-->
+            <div class="tab-content">
+
+            <div class="tab-pane active" id="tab1">
+              <h4><span class="glyphicon glyphicon-map-marker"></span>Our Location<small> just reach us here..!</small></h4>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15556.756546940098!2d77.6366332767212!3d12.89555658531198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1472130490875
+              " width="100%" height="100" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <p>The following example demonstrates a simple use of the animate() method;
+                 it moves a  element to the right, until it has reached a left property of 250px</p>
+              <p>Yes, almost! However, there is one important thing to remember:
+                 all property names must be camel-cased when used with the animate() method:
+                 You will need to write paddingLeft instead of padding-left, marginRight instead of margin-right, and so on. </p>
+            </div><!--end of tab1-->
+            <div class="tab-pane" id="tab2">
+              <h4><span class="glyphicon glyphicon-user"></span>Ideal Users<small>  for your information</small></h4>
+              <img src="http://placehold.it/140x140" class="thumbnail pull-left">
+              <p>jQuery is a fast, small, and feature-rich JavaScript library.
+                It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler
+                 with an easy-to-use API that works across a multitude of browsers.
+                 With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.Corporate</p>
+              <p>Yes, almost! However, there is one important thing to remember:
+                 all property names must be camel-cased when used with the animate() method:
+                 You will need to write paddingLeft instead of padding-left, marginRight instead of margin-right, and so on. </p>
+                 <hr>
+                 <a href="#mymodal" role="button" data-toggle="modal" class="btn btn-danger ">
+                   <span class="glyphicon glyphicon-briefcase"></span>click for a modal window</a>
+                   <div class="modal fade" id="mymodal">
+                     <div class="modal-dialog">
+                       <div class="modal-content">
+                         <div class="modal-header">
+                           <button type="button" class="close" data-dismiss="modal">&times;
+                           </button><!--end of button-->
+                           <h4 class="modal-title">My Modal Window</h4>
+                         </div><!--end of modal header-->
+                         <div class="modal-body">
+                           <h4>This is an Example for modal</h4>
+                           <p>jQuery is a fast, small, and feature-rich JavaScript library.
+                             It makes things like HTML document traversal and manipulation, event handling, animation..</p>
+                             <h4>Another heading to add on..</h4>
+                            <a href="#" role="button"  class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="You Clicked it.." data-content="I knew it..">
+                              Do not use This..</a>
+                            <h4>Another Data to add on..</h4>
+                            <a href="" data-original-title="Tooltip" rel="tooltip">Way beyond</a> wat you always think of..
+                            <a href=""  data-original-title="Blah Blah" rel="tooltip">Try once</a>
+                            <hr>
+                            <p class=""><small class="text-muted">jQuery is a fast, small, and feature-rich JavaScript library.</small></p>
+                            <form class="form-horizontal">
+                              <div class="form-group">
+                                <label class="col-lg-2 control-label" for="name">Name</label>
+                                <div class="col-lg-10">
+                                  <input class="form-control" id="name" placeholder="Enter your Name" type="text">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-lg-2 control-label" for="email">Email</label>
+                                <div class="col-lg-10">
+                                  <input class="form-control" id="email" placeholder="Enter your Email" type="email">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-lg-2 control-label" for="message">Message</label>
+                                <div class="col-lg-10">
+                                  <textarea class="form-control" id="message" placeholder="Enter your Message" rows="3">
+                                  </textarea>
+                                  <button type="submit" class="btn btn-success pull-right">Send!
+                                  </button><!--end of button-->
+                                </div>
+                              </div>
+                            </form>
+                          </div><!--end of modal body-->
+                           <div class="modal-footer">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                                   </button><!--end of button-->
+                                   <button type="button" class="btn btn-primary">Save Changes
+                                   </button><!--end of button-->
+                             </div><!--end of modal footer-->
+                       </div><!--end of modal content-->
+                     </div><!--end of dialog-->
+                   </div><!--end of mymodal-->
+                 </div><!--end of tab2-->
+              </div><!--end of tab content-->
+          </div><!--end of tabbable-->
+        </div><!--end of more info col-sm-6-->
+        <div class="col-sm-6">
+                <h3>Some Extra Text</h3>
+                <p>jQuery selectors are used to "find" (or select) HTML elements based on their name, id, classes,
+                   types, attributes, values of attributes and much more.
+                   It's based on the existing CSS Selectors, and in addition, it has some own custom selectors</p>
+                   <h4>A List Group</h4>
+                   <div class=list-group>
+                     <a href="" class="list-group-item">
+                       <h4 class="list-group-item-heading">Banana</h4>
+                       <p class="list-group-item-text"> It's based on the existing CSS Selectors, and in addition, it has some own custom selectors</p>
+                     </a>
+                     <a href="" class="list-group-item">
+                       <h4 class="list-group-item-heading">Banana</h4>
+                       <p class="list-group-item-text"> It's based on the existing CSS Selectors, and in addition, it has some own custom selectors</p>
+                     </a>
+                     <a href="" class="list-group-item">
+                       <h4 class="list-group-item-heading">Banana</h4>
+                       <p class="list-group-item-text"> It's based on the existing CSS Selectors, and in addition, it has some own custom selectors</p>
+                     </a>
+                   </div><!--end of list group-->
+                   <h5>A List Group</h5>
+                   <p>jQuery selectors are used to "find" (or select) HTML elements based on their name, id, classes,
+                      types, attributes, values of attributes and much more.</p>
+              </div><!--end of more info col-sm-6-->
+      </div><!--end of moreInfo-->
+      <div class="row" id="moreCourses">
+        <div class="col-12">
+          <h3>Learn more about jQuery</h3>
+          <div class="thumbnails row">
+            <div class="col-6">
+              <div class="thumbnail">
+                <img src="../images/item_webhosting101.jpg" alt="first image">
+                <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span><sup>Rs.240</sup></div>
+                <div class="caption">
+                  <h3>First Heading</h3>
+                  <p>jQuery selectors are used to "find" (or select) HTML elements based on their name, id, classes..</p>
+                  <p><a href="https://wiprohybridmernwave6.slack.com/messages/@manjul/" class="btn btn-primary btn-small" target="_blank">First Button</a>
+                  <a href="https://wiprohybridmernwave6.slack.com/messages/@manjul/" class="btn btn-link btn-small" target="_blank">Learn More</a></p>
+                </div><!--end of caption-->
+              </div><!--end of thumbnail-->
+            </div><!--end of col-6-->
+            <div class="col-6">
+                <div class="thumbnail">
+                  <img src="../images/item_psd2html5.jpg" alt="first image">
+                  <div class="label label-info price"><span class="glyphicon glyphicon-tag"></span><sup>free</sup></div>
+                  <div class="caption">
+                    <h3>Second Heading</h3>
+                    <p>jQuery selectors are used to "find" (or select) HTML elements based on their name, id, classes..</p>
+                    <p><a href="https://wiprohybridmernwave6.slack.com/messages/@manjul/" class="btn btn-primary btn-small" target="_blank">Second Button</a>
+                    <a href="https://wiprohybridmernwave6.slack.com/messages/@manjul/" class="btn btn-link btn-small" target="_blank">Learn More</a></p>
+
+                  </div><!--end of caption-->
+                </div><!--end of thumbnail-->
+            </div><!--end of col-6-->
+          </div><!--end of thumbnails row-->
+        </div><!--end of col-12-->
+      </div><!--end of moreCourses-->
+    </div><!--end of container-->
+
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-2">
+                <h6>Copyright &copy; 2013 {name}</h6>
+              </div><!--end of col-sm-2-->
+              <div class="col-sm-4">
+                <h6>About Us</h6>
+                <p>Is the proper HTML entity for giving dimensions &times;? I want to be semantically correct, but that begs the question,
+                  is listing a dimension as 2" x 3" even semantic? If the x represents "by", would I use the letter x or ×?</p>
+              </div><!--end of col-sm-4-->
+              <div class="col-sm-2">
+                <h6>Navigation</h6>
+                <ul class="unstyled">
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Contact</a></li>
+                  <li><a href="">Preferences</a></li>
+                  <li><a href="">Support</a></li>
+                </ul>
+              </div><!--end of col-sm-2-->
+              <div class="col-sm-2">
+                <h6>Follow Us</h6>
+                <ul class="unstyled">
+                  <li><a href="">Google</a></li>
+                  <li><a href="">Twitter</a></li>
+                  <li><a href="">InstaGram</a></li>
+                  <li><a href="">Facebook</a></li>
+                </ul>
+              </div><!--end of col-sm-2-->
+              <div class="col-sm-2">
+                <h6>Coded With  <span class="glyphicon glyphicon-heart"></span> by Manjul</h6>
+              </div><!--end of col-sm-2-->
+            </div><!--end of row-->
+          </div><!--end of footer container-->
+        </footer>
+
+  </body>
+  </html>
